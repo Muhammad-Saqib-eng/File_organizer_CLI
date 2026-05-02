@@ -1,0 +1,11 @@
+learnt dictionary lookup instead of if else i was using if else condition to with endswith()
+function to categorize but thenn i came to knew that we can use os.path.splitext() it gives us 
+name of folder and its extension also so we can unpack this tuple in
+
+name,ext= os.path.splitext(folder)
+
+also leant script skipping itself we had extension of .py when we run the program it gets moved to
+scripts folder then when we again run the program it gets out of it and gets mmoved again so to 
+avoid this we store the .py file in a variable and apply check condition if it arrives skip it 
+
+current_file=os.path.basename(__file__) 
